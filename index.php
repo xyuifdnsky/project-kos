@@ -17,17 +17,18 @@
         
         /* HEADER */
         .header {
-            background-color: #fff;
-            padding: 15px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;    
-            top: 0;
-            left: 0;
-            width: 90%; /* 100% - 2*5% padding */
-            z-index: 1000;
-            border-bottom: 1px solid #ddd;
+           background-color: #fff;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
         }
 
         /* Logo */
@@ -48,12 +49,13 @@
 
         /* Navigasi */
         .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-            margin: 0;
-            padding: 0;
-            align-items: center; 
+              display: flex;
+                list-style: none;
+                gap: 30px;
+                padding: 0;
+                margin: 0;
+                align-items: center;
+
         }
         .nav-menu a {
             text-decoration: none;
@@ -533,6 +535,35 @@
         </div>
     </section>
 
+<<<<<<< HEAD
+        <!-- POP UP Register -->
+<div id="roleOverlay" class="role-overlay">
+    <div class="role-popup">
+
+        <h3 class="mb-4">Daftar Sebagai Apa?</h3>
+        <p class="text-muted mb-4">Pilih jenis akun yang sesuai dengan kebutuhan Anda.</p>
+
+        <a href="app/views/auth/register.php?role=penyewa" class="role-btn btn-penyewa">
+            <span class="role-icon"><i class="fas fa-bed"></i></span>
+            <span class="role-text">
+                Penyewa
+                <small>Mencari dan Menyewa Kos</small>
+            </span>
+        </a>
+
+        <a href="app/views/auth/register.php?role=pemilik" class="role-btn btn-pemilik">
+            <span class="role-icon"><i class="fas fa-house-user"></i></span>
+            <span class="role-text">
+                Pemilik Kos
+                <small>Mengelola Properti & Penyewa</small>
+            </span>
+        </a>
+
+        <button id="closeRole" class="btn btn-secondary mt-3 w-100">Tutup</button>
+
+    </div>
+</div>
+=======
     <section class="section-white" id="lokasi">
         <h2 class="section-title">LOKASI KOST</h2>
         <span class="underline"></span>
@@ -558,6 +589,8 @@
                 </div>
         </div>
     </section>
+>>>>>>> 0ca5f17f51d71068c1372bb7f662f36f66cf1053
+
 
     <footer class="footer">
         <div class="footer-content">
@@ -647,6 +680,8 @@
     <div id="roleUserOverlayBar" class="role-overlay">
         <div class="role-popup">
 
+<<<<<<< HEAD
+=======
             <h3 class="mb-4">Login Sebagai Apa?</h3>
             <p class="text-muted mb-4">Pilih jenis akun yang sesuai dengan kebutuhan Anda.</p>
 
@@ -698,13 +733,11 @@
             document.getElementById('roleUserOverlayBar').style.display = 'flex';
         });
 
-document.getElementById('closeUserBar').addEventListener('click', function() {
-    document.getElementById('roleUserOverlayBar').style.display = 'none';
-});
-</script>
+        document.getElementById('closeUserBar').addEventListener('click', function() {
+            document.getElementById('roleUserOverlayBar').style.display = 'none';
+        });
+    </script>
 
-
-
-
+>>>>>>> 0ca5f17f51d71068c1372bb7f662f36f66cf1053
 </body>
 </html>

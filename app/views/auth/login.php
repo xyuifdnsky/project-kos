@@ -42,8 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             // Redirect sesuai role
            switch ($user['role']) {
+            
    case 'admin':
-
     // Jika admin memiliki id_pemilik → masuk ke dashboard admin pemilik
     if (!empty($user['id_pemilik']) && $user['id_pemilik'] > 0) {
         header("Location: dashboard/pemilik/admin/admin.php");

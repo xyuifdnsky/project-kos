@@ -6,8 +6,8 @@ session_start();
 $id_pemilik = $_GET['id_pemilik'] ?? $_SESSION['user']['id_pemilik'];
 
 // Cek hak akses admin / pemilik kos
-if (!isset($_SESSION['user']) || !in_array($_SESSION['user']['level'], ['admin', 'pemilik'])) {
-    header("Location: ../../../login.php");
+if (!isset($_SESSION['user']) || !in_array($_SESSION['user']['role'], ['admin', 'pemilik'])) {
+    header("Location: ../auth/login.php");
     exit;
 }
 

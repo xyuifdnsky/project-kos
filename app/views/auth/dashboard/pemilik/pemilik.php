@@ -263,9 +263,9 @@ $totalKeluhan = 2;  // Ganti dengan query keluhan
 <body>
 
 <div class="sidebar" id="sidebar">
-    <div class="logo">SiLoKos Admin</div>
+    <div class="logo">SiLoKos</div>
     <a href="#" class="active"><i class="bi bi-speedometer2"></i> Dashboard</a>
-    <a href="../../penyewa/data_penyewa.php"><i class="bi bi-person"></i> Data Penghuni</a>
+    <a href="../../../penyewa/data_sewa.php"><i class="bi bi-person"></i> Data Penghuni</a>
     <a href="../../../kamar/create.php"><i class="bi bi-door-open"></i> Tambah Kamar</a>
     <a href="../../../Keluhan/lihat_keluhan.php"><i class="bi bi-chat-dots"></i> Keluhan</a>
     <a href="../../../Pembayaran/transaksi.php"><i class="bi bi-credit-card"></i> Transaksi</a>
@@ -319,6 +319,7 @@ $totalKeluhan = 2;  // Ganti dengan query keluhan
 
         <div class="col-lg-4 col-md-6">
             <div class="card-stat">
+                  <i class="bi bi-person stat-icon text-primary"></i>
                 <div class="stat-number">0</div>
                 <div class="fw-semibold mt-2">Penghuni</div>
             </div>
@@ -326,6 +327,7 @@ $totalKeluhan = 2;  // Ganti dengan query keluhan
 
         <div class="col-lg-4 col-md-6">
             <div class="card-stat">
+                  <i class="bi bi-info stat-icon text-primary"></i>
                 <div class="stat-number">0</div>
                 <div class="fw-semibold mt-2">Keluhan</div>
             </div>

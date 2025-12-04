@@ -63,6 +63,7 @@ $list_kamar_enhanced = array_map('enhance_kamar_data', $list_kamar);
     <title>Dashboard Penyewa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
     <style>
         :root {
             --primary-color: #305FCA;
